@@ -24,6 +24,12 @@ jobs:
         -name: "docker login"
           run: docker login --username ${{DOCKER_USERNAME}} --password ${{DOCKER_TOKEN}}
 
+          -name: "building docker image"
+            run: docker build -t ${{DOCKER_USERNAME}}/myimage
+
+          -name: "pushing to docker hub" 
+            run: docker push ${{DOCKER_USERNAME}}/myimage
+
 
        
 
