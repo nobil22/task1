@@ -17,11 +17,16 @@ jobs:
 
 
     steps:
-      - name: 'testing githup action'
-        run: pwd
+      - name: 'Before'
+        run: ls
+
+        -uses: actions/checout@v3
+
+         - name: 'Before'
+        run: ls
+
 
      
-     - name: 'testing printing'
-        run: echo mohamed
+
 
 
