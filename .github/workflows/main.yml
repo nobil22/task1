@@ -17,13 +17,15 @@ jobs:
 
 
     steps:
-      - name: 'Before'
-        run: ls
+      
 
         -uses: actions/checout@v3
 
-         - name: 'Before'
-        run: ls
+        -name: "docker login"
+          run: docker login --username nobil22 --password dckr_pat_fp5Os1QeXiblN2KdcmSl39OyxEk
+
+
+       
 
 
      
